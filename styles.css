@@ -1,0 +1,40 @@
+body {
+    margin: 0px;
+    height: 100%;
+    width:100%;
+    background-color: black;
+    color: orange;
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    border: 1px orange solid;
+
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+header nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.intro {
+    width: 100vw;
+    height: 600px;
+    border: 1px solid orange;
+}
+
+.intro h2 {
+    font-size: 50px;
+}
+
+div.name-box {
+    width:400px;
+    border: 1px solid lightgray;
+}
