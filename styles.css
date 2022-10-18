@@ -1,91 +1,360 @@
 body {
-    margin: 0px;
-    height: 100%;
-    width:100%;
-    background-color: black;
-    color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  height: auto;
+  width: 100%;
+  background-color: gray;
+  color: orange;
+}
+
+.main-container {
+  max-width: 1400px;
+  width: 100%;
+  border: 1px solid orange;
+  position: relative;
+  overflow: hidden;
 }
 
 /***************** Header/Nav  ********************/
+.wrap-bar {
 
-header {
-    width: 100vw;
-    height: 100px;
-    border: 1px orange solid;
-
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-header h1 {
-    display: flex;
-    justify-content: center;
+.sidebar {
+  width: 240px;
+  height:100vh;
+  position: fixed;
+  top: 0;
 }
 
-header nav {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.tabs {
+  height: 300px;
+  border: 2px solid red;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-
 
 /***************** Landing Page  ********************/
 .landing-page {
-    width: 100vw;
-    height: 80vh;
-    border: 1px solid orange;
+
+  height: 100vh;
+  border: 1px solid orange;
+  margin-left: 240px;
 }
 
 .landing-page h2 {
-    font-size: 50px;
-    margin-top: 125px;
-    margin-left: 50px;
+  display: flex;
+  align-items: space-evenly;
+  font-size: 50px;
+  margin-left: 50px;
 }
 
 div.name-box {
-    width:400px;
-    border: 1px solid lightgray;
-    margin-left: 50px;
+  width: 400px;
+  border: 1px solid lightgray;
+  margin-left: 50px;
 }
 
 /***************** About Page  ********************/
-.about {
-    width: 100vw;
-    height: 80vh;
-    border: 1px solid purple;
+.about-page {
+
+  height: 80vh;
+  border: 2px solid orange;
+  margin-left: 240px;
 }
-.about h1 {
-    display: flex;
-    justify-content: center;
+.about-page h1 {
+  display: flex;
+  justify-content: center;
 }
 
 .containers {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
 }
 
-.about .about-leftside-container {
-    width:500px;
-    height: 500px;
-    border: 1px solid orange;
-    margin-right: 50px;
+.about-page .about-leftside-container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid orange;
+  margin-right: 50px;
 }
 
-.about .about-rightside-container {
-    width:500px;
-    height: 500px;
-    margin-top: 100px;
+.about-page .about-rightside-container {
+  width: 500px;
+  height: 500px;
+  margin-top: 75px;
 }
 
-.about div.about-img {
-    width:500px;
-    height: 350px;
-    border: 1px solid red;
+.about-page div.about-img {
+  width: 500px;
+  height: 350px;
+  border: 1px solid orange;
 }
 
 .containers h2 {
-    display: flex ;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /***************** Resume Page  ********************/
+
+/***************** Portfolio Page  ********************/
+.portfolio-page {
+    display: flex;
+
+    height: 100vh;
+    border: 1px solid orange;
+    margin-left: 240px;
+}
+
+.portfolio-profile-pic {
+    height:10em;
+    width:13em;
+    border: 1px solid orange;
+}
+
+.extra-info {
+    border: 1px solid orange;
+}
+
+/**** Portfolio Page Rightside  ****/
+.portfolio-rightside-container {
+    width: 95vw;
+    height: 100vh;
+    border: 1px solid orange;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+
+}
+
+.portfolio-header {
+    width: 75em;
+    height: 30%;
+    border: 1px solid orange;
+}
+
+
+.portfolio-accolades {
+  display: flex;
+  justify-content: space-around;
+}
+
+figure {
+  width: 10em;
+  height: 10em;
+  border: 1px solid orange;
+}
+
+.first-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+}
+
+.second-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+}
+
+.third-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+} 
+
+/***************** Resume Page  ********************/
+.resume-page {
+  height: 100vh;
+  border: 2px solid red;
+  margin-left: 240px;
+}
+
+.resume-wrap-header-display {
+  display: flex;
+  justify-content: center;
+}
+
+
+.resume-header-display {
+  width: 750px;
+  height: 100px;
+  border: 1px solid yellow;
+  margin-top: 50px;
+}
+
+.circle-container {
+  width: 200px;
+  height:200px;
+  border: 1px solid green;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resume-textarea {
+  display: flex;
+  margin-top: 100px;
+
+}
+
+.resume-leftside-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.resume-rightside-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: 200px;
+}
+
+.resume-objective {
+  width: 400px;
+  height: 200px;
+
+  margin-bottom: 100px;
+}
+
+.resume-objective h2 {
+  margin: 0px;
+}
+
+
+
+.resume-education {
+  width: 400px;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.resume-education h2 {
+  margin: 0px;
+}
+
+.resume-education h5 {
+  margin: 0px;
+}
+
+.resume-experience {
+  width: 400px;
+  height: 200px;
+  margin-top: 50px;
+}
+
+.resume-experience h2 {
+  margin: 0px;
+}
+
+.resume-experience h5 {
+  margin: 0px;
+}
+
+.resume-volunteer--leadership {
+  width: 400px;
+  height: 200px;
+
+}
+
+.resume-volunteer--leadership h2 {
+  margin: 0px;
+}
+
+.wrapped-direct-gallery-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+button .direct-gallery-container {
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+}
+
+/***************** Contact Page Modal Pop up ********************/
+button.open {
+
+}
+
+.modal-container {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.modal-container.show {
+  display: block;
+  position: fixed;
+  margin-top: 500px;
+}
+
+
+.modal {
+  width: 600px;
+  max-width: 100%;
+  background-color: white;
+}
+
+/***************** Old Header  ********************/
+/* header {
+  height: 100px;
+  border: 1px orange solid;
+  margin-left: 240px;
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
