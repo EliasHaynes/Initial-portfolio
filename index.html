@@ -5,154 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./styles.css" />
-    
   </head>
+
   <body>
     <div class="main-container">
-      <header class="wrap-bar">
-        <section class="sidebar">
-          <section class="portfolio-profile-pic">
-            <img src="" alt="" />
-            <h4>Elias Haynes</h4>
-            <h5>Freelance Web Dev</h5>
-          </section>
-          <section class="extra-info">
-            <p>Residence: Texas USA</p>
-            <p>Language: Elias</p>
-            <p>Age: 20</p>
-          </section>
-          <nav class="tabs">
-            <div>Home</div>
-            <div>About</div>
-            <div>Resume</div>
-            <div>Gallery</div>
-            <!-- Contact Page Pop Up -->
-            <button id="open" class="open">Contact  Me!</button>
-            
+
+      <!-- Mobile Version ------------------------------------------------------------------>
+      <main class="landing-page-mobile">
+        <div class="profile-pic"><img src="" alt="profile pic of me" /></div>
+        <div class="basic-info">
+          <h1>Elias Haynes</h1>
+          <h3>Fullstack Application Developer</h3>
+          <img src="" alt="icon of pinpoint location" />
+          <h5>Austin,Tx</h5>
+          <p>Age: 21</p>
+          <p>Language: English</p>
+        </div>
+
+        <header>
+          <nav>
+            <div class="tabs"></div>
           </nav>
-          <section class="socials">
-            <span>linkedin</span>
-            <span>insta</span>
-            <span>twitter</span>
-            <span>website</span>
-            <span>youtube</span>
-          </section>
-        </section>
-      </header>
+        </header>
 
-      <main class="landing-page">
-        <div id="modal-container" class="modal-container">
-          <div id="contact-modal">
-            <h1>Peek-a-boo</h1>
-            <p>yo yo yo</p>
-            <button id="close" class="close">X</button>
-          </div>
-        </div>
-        <h2>Hey! I'm</h2>
-        <div class="name-box">
-          <h2>Elias Haynes</h2>
-        </div>
-        <h2>Working as a Web Dev</h2>
-      </main>
-      <main class="about-page">
-        <h1>About Elias</h1>
-        <section class="containers">
-          <div class="about-leftside-container">
-            <h2>Who is Elias?</h2>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
-          <div class="about-rightside-container">
-            <div class="about-img"><img src="" alt="" /></div>
-            <h2>Pleased to meet you!</h2>
-          </div>
-        </section>
+        <address class="socials">
+          <img src="" alt="hyperlink icon for twitter" />
+          <h4></h4>
+          <img src="" alt="hyperlink icon for github" />
+          <h4></h4>
+          <img src="" alt="hyperlink icon for instagram" />
+          <h4></h4>
+          <img src="" alt="hyperlink icon for linkedin" />
+          <h4></h4>
+        </address>
       </main>
 
-      <main class="portfolio-page">
+      <!-- Desktop Version ----------------------------------------------------------------->
+      <main class="landing-page-desktop">
+        <div class="landing-page-margined-from-sidebar">
+          <h1>Elias Haynes</h1>
+          <h3>Fullstack Application Developer</h3>
+        </div>
         
-        <section class="portfolio-rightside-container">
-          <section class="portfolio-header">
-            <h2>Discover my skills!</h2>
-            <button class="portfolio-header-explore"></button>
-          </section>
-          <section class="portfolio-accolades">
-            <span>1yr Experience</span>
-            <span>143 completed projects</span>
-            <span>114 happy customers</span>
-            <span>20+ honors and awards </span>
-          </section>
-          <h3>My Work:</h3>
-          <section class="gallery">
-            <section class="first-row">
-              <figure></figure>
-              <figure></figure>
-              <figure></figure>
+
+        <!-- Sidebar Nav -->
+        <header class="wrap-bar">
+          <section class="sidebar">
+            <section class="profile-pic">
+              <img src="" alt="" />
+              <h4>Elias Haynes</h4>
+              <h5>Fullstack Javascript Application Developer</h5>
             </section>
-            <section class="second-row">
-              <figure></figure>
-              <figure></figure>
-              <figure></figure>
+            <section class="extra-info">
+              <p>Residence: Austin Texas</p>
+              <p>Language: English</p>
+              <p>Age: 21</p>
             </section>
-            <section class="third-row">
-              <figure></figure>
-              <figure></figure>
-              <figure></figure>
+            <nav class="tabs">
+              <div>Home</div>
+              <div>About</div>
+              <div>Resume</div>
+              <div>Gallery</div>
+              <!-- Contact Page Pop Up Button-->
+              <button id="open" class="open">Contact Me!</button>
+            </nav>
+
+            <section>
+              <address class="socials">
+                <img src="" alt="hyperlink icon for twitter" /> <h4></h4>
+                <img src="" alt="hyperlink icon for github" /> <h4></h4>
+                <img src="" alt="hyperlink icon for instagram" /> <h4></h4>
+                <img src="" alt="hyperlink icon for linkedin" /> <h4></h4>
+              </address>
             </section>
           </section>
-        </section>
+        </header>
       </main>
-
-      <main class="resume-page">
-        <div class="resume-wrap-header-display">
-          <div class="circle-container">
-            <h1>EMH</h1>
-          </div>
-          <div class="resume-header-display">
-            <h2>Elias Haynes</h2>
-            <p></p>
-          </div>
-        </div>
-        <section class="resume-textarea">
-          <article class="resume-leftside-container">
-            <section class="resume-objective">
-              <u><h2>Objective</h2></u>
-              <p>abcxsdfsadffsafsafsaf</p>
-            </section>
-            <section class="resume-volunteer--leadership">
-              <u><h2>Volunteer & Leadership</h2></u>
-              <p>hgjkghjghfj</p>
-            </section>
-          </article>
-          <article class="resume-rightside-container">
-            <section class="resume-experience">
-              <u><h2>Experience</h2></u>
-              <h5>Job Title \ Company / Dates</h5>
-              <p></p>
-            </section>
-            <section class="resume-education">
-              <u><h2>Education</h2></u>
-                <h5>Certificate \ School / Dates</h5>
-              <p> </p>
-            </section>
-        </article>
-      </section>
-      <section class="wrapped-direct-gallery-container">
-        <section class="direct-gallery-container">
-          <p>Interested in what ive built?</p>
-          <button class="direct-gallery">Click to see!</button>
-        </section>
-      </section>
-      </main>
-
-
-
-
+      
     </div>
   </body>
 </html>

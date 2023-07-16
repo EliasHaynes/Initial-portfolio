@@ -1,42 +1,4 @@
-
-/* Mobile version */
-@media (max-width: 768px) {
-  
-  .landing-page-desktop {
-    display: none;
-  }
-
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px;
-    height: auto;
-    width: 100%;
-    background-color: grey;
-    color: orange;
-  }
-  
-  .main-container {
-    max-width: 1400px;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-  }
-  
-}
-
-/* ------------------------------------------------------------------------------- */
-
-/* Desktop version */
-@media (min-width: 769px) {
-  
-  .landing-page-mobile {
-    display: none;
-  }
-
-  body {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,27 +10,19 @@
   }
   
   .main-container {
-    max-width: 1500px;
-    height: 100%;
+    max-width: 1400px;
     width: 100%;
+
+    border: 1px solid orange;
     position: relative;
     overflow: hidden;
   }
-
-  .landing-page-desktop {
-    display: flex;
-    flex-flow: row;
-    margin-left: 17%;
-  }
-
-
   
   /***************** Header/Nav  ********************/
   .wrap-bar {
     position: absolute;
     top: 0;
     left: 0;
-
   }
   
   .sidebar {
@@ -76,36 +30,25 @@
     height:100%;
     position: fixed;
     top: 0;
-
   }
-
-  .profile-pic {
-    height: 20%;
-    border: 1px solid orange;
-  }
-
-  .extra-info {
-    border: 1px solid orange;
-    height: 25%;
-
-  }
-
+  
   .tabs {
-    height: 35%;
+    height: 15%;
     border: 2px solid red;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
     align-items: center;
   }
-
-  .socials {
-    height: 20%;
+  
+  .portfolio-profile-pic {
     border: 1px solid orange;
   }
   
-
-  
+  .extra-info {
+    border: 1px solid orange;
+    height: 25%;
+  }
   
   
   
@@ -113,7 +56,7 @@
   .resume-page {
     height: 100vh;
     border: 2px solid red;
-
+    margin-left: 240px;
   }
   
   .resume-wrap-header-display {
@@ -182,10 +125,31 @@
     border: 1px solid red;
   }
   
+  /***************** Landing Page  ********************/
+  .landing-page {
+    height: 100vh;
+    border: 1px solid orange;
+    margin-left: 240px;
+  }
+  
+  .landing-page h2 {
+    display: flex;
+    align-items: space-evenly;
+    font-size: 50px;
+    margin-left: 50px;
+  }
+  
+  div.name-box {
+    width: 400px;
+    border: 1px solid lightgray;
+    margin-left: 50px;
+  }
+  
   /***************** About Page  ********************/
   .about-page {
     height: 80vh;
     border: 2px solid orange;
+    margin-left: 240px;
   }
   
   .about-page h1 {
@@ -226,9 +190,10 @@
   /***************** Portfolio Page  ********************/
   .portfolio-page {
       display: flex;
+  
       height: 100vh;
       border: 1px solid orange;
-
+      margin-left: 240px;
   }
   
   /**** Portfolio Page Rightside  ****/
@@ -309,5 +274,30 @@
     max-width: 100%;
     background-color: white;
   }
-
-}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
