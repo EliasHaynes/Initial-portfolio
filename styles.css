@@ -24,14 +24,13 @@
     position: relative;
     overflow: hidden;
   }
-  
 }
 
 /* ------------------------------------------------------------------------------- */
 
 /* Desktop version */
 @media (min-width: 769px) {
-  
+
   .landing-page-mobile {
     display: none;
   }
@@ -49,7 +48,7 @@
   
   .main-container {
     max-width: 1500px;
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -72,7 +71,7 @@
   }
   
   .sidebar {
-    width: 16%;
+    width: 10%;
     height:100%;
     position: fixed;
     top: 0;
@@ -112,8 +111,9 @@
   /***************** Resume Page  ********************/
   .resume-page {
     height: 100vh;
+    width: 84%;
     border: 2px solid red;
-
+    
   }
   
   .resume-wrap-header-display {
@@ -184,8 +184,10 @@
   
   /***************** About Page  ********************/
   .about-page {
-    height: 80vh;
+    height: 100vh;
+    width: 90%;
     border: 2px solid orange;
+    margin-left: 12.5%;
   }
   
   .about-page h1 {
@@ -200,21 +202,21 @@
   }
   
   .about-page .about-leftside-container {
-    width: 500px;
-    height: 500px;
+    width: 50%;
+    height: 50%;
     border: 1px solid orange;
     margin-right: 50px;
   }
   
   .about-page .about-rightside-container {
-    width: 400px;
-    height: 400px;
+    width: 50%;
+    height: 50%;
     margin-top: 75px;
   }
   
   .about-page div.about-img {
-    width: 500px;
-    height: 350px;
+    width: 50%;
+    height: 50%;
     border: 1px solid orange;
   }
   
@@ -233,13 +235,13 @@
   
   /**** Portfolio Page Rightside  ****/
   .portfolio-rightside-container {
-      width: 95vw;
+      width: 90%;
       height: 100vh;
       border: 1px solid orange;
       display: flex;
       flex-flow: column nowrap;
       align-content: flex-start;
-  
+      margin-left: 13%;
   }
   
   .portfolio-header {
