@@ -20,14 +20,14 @@
   
   .main-container {
     max-width: 1400px;
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
     overflow: hidden;
 
   }
 
-  /***************** Landing Page  ********************/
+  /***************** M Landing Page  ********************/
   .landing-page-mobile {
     display: flex;
     flex-direction: column;
@@ -38,7 +38,7 @@
   .landing-page {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    background-color: grey;
   }
 
   .landing-page-top-container {
@@ -85,6 +85,118 @@
     margin-right: 5%;
    }
 
+   /***************** M About Page  ********************/
+   .about-page {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid orange;
+  }
+  
+  .about-page h1 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .containers {
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-page .about-leftside-container {
+    width: 75%;
+    height: 50%;
+    border: 1px solid orange;
+    
+  }
+  
+  .about-page .about-rightside-container {
+    width: 60%;
+    height: 50%;
+    margin-top: 10%;
+    border: 1px solid orange;
+  }
+  
+  .about-img {
+    width: 90%;
+    height: 80%;
+    border: 1px solid red;
+  }
+  
+  .containers h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  /***************** M Resume Page  ********************/
+  .resume-page {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid red;
+  }
+
+  /***************** M Portfolio Page  ********************/
+  .portfolio-page {
+    width: 100%;
+    height: 100vh;
+    border: 2px solid orange;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: flex-start;
+  }
+  
+  .portfolio-header {
+      width: 100%;
+      height: 30%;
+  }
+  
+  .portfolio-accolades {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid orange;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 95%;
+    height: 100%;
+  }
+
+  figure {
+    width: 50%;
+    height: 50%;
+    border: 1px solid orange;
+  }
+  
+  .first-row {
+    display: flex;
+    
+    width: 33%;
+    height: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  
+  }
+  
+  .second-row {
+    width: 33%;
+    height: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  
+  }
+  
+  .third-row {
+    width: 33%;
+    height: 33%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  } 
 }
 
 /* ------------------------------------------------------------------------------- */
