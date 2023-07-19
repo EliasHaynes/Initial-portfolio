@@ -107,7 +107,7 @@
   }
   
   .about-page .about-leftside-container {
-    width: 60%;
+    width: 95%;
     height: auto;
     border: 1px solid orange;
     margin-top: 0px;
@@ -125,7 +125,7 @@
     justify-content: start;
   }
   .about-page .about-rightside-container {
-    min-width: 50%;
+    width: 80%;
     height: 50%;
     margin-top: 10%;
     border: 1px solid orange;
