@@ -89,13 +89,14 @@
    .about-page {
     height: 100vh;
     width: 100%;
-    border: 2px solid orange;
+
   }
   
   .about-page h1 {
-    height: 5%;
+    height: auto;
     display: flex;
     justify-content: center;
+    margin-top: 2px;
   }
   
   .containers {
@@ -107,7 +108,7 @@
   
   .about-page .about-leftside-container {
     width: 60%;
-    height: 50%;
+    height: auto;
     border: 1px solid orange;
     margin-top: 0px;
   }
@@ -118,12 +119,13 @@
   }
 
   .about-page li {
+    margin: 0px;
     display: flex;
     flex-flow: row wrap;
     justify-content: start;
   }
   .about-page .about-rightside-container {
-    width: 50%;
+    min-width: 50%;
     height: 50%;
     margin-top: 10%;
     border: 1px solid orange;
