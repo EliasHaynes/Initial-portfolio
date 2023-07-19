@@ -93,26 +93,32 @@
   }
   
   .about-page h1 {
+    height: 5%;
     display: flex;
     justify-content: center;
   }
   
   .containers {
     display: flex;
-    height: 90%;
+    height: 80%;
     flex-direction: column;
     align-items: center;
   }
   
   .about-page .about-leftside-container {
-    width: 75%;
+    width: 60%;
     height: 50%;
     border: 1px solid orange;
+    margin-top: 0px;
     
   }
   
+  .about-page h2 {
+    display: flex;
+    justify-content: center;
+  }
   .about-page .about-rightside-container {
-    width: 60%;
+    width: 50%;
     height: 50%;
     margin-top: 10%;
     border: 1px solid orange;
@@ -124,10 +130,10 @@
     border: 1px solid red;
   }
   
-  .containers h2 {
-    display: flex;
-    justify-content: center;
+  .greeting-tag {
+    height: 10%;
   }
+
 
   /***************** M Resume Page  ********************/
   .resume-page {
@@ -165,8 +171,8 @@
   }
 
   figure {
-    width: 50%;
-    height: 50%;
+    width: 50px;
+    height: 50px;
     border: 1px solid orange;
   }
   
