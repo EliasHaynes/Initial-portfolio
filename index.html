@@ -2,7 +2,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
+    />
     <title>Home</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
@@ -12,38 +15,52 @@
 
       <!-- Mobile Version ------------------------------------------------------------------>
       <main class="landing-page-mobile">
-        <div class="profile-pic"><img src="" alt="profile pic of me" /></div>
-        <div class="basic-info">
-          <h1>Elias Haynes</h1>
-          <h3>Fullstack Application Developer</h3>
-          <img src="" alt="icon of pinpoint location" />
-          <h5>Austin,Tx</h5>
-          <p>Age: 21</p>
-          <p>Language: English</p>
+        <div class="landing-page">
+          <div class="landing-page-top-container">
+            <div class="profile-pic">
+              <img src="" alt="profile pic of me" />
+            </div>
+            <h1>Elias Haynes</h1>
+            <h3>Fullstack Application Developer</h3>
+            <div class="location">
+              <img src="" alt="icon of pinpoint location" />
+              <h5>Austin,Tx</h5>
+            </div>
+          </div>
+
+          <div class="landing-page-bottom-container">
+            <div class="basic-info">
+              <p>Age: 21</p>
+              <p>Language: English</p>
+            </div>
+            <header>
+              <nav>
+                <div class="tabs">
+                  <div>About</div>
+                  <div>Resume</div>
+                  <div>My Work</div>
+                  <div>Contact Me!</div>
+                </div>
+              </nav>
+            </header>
+
+            <address class="socials">
+              <img src="" alt="twitter" />
+              <h4></h4>
+              <img src="" alt="github" />
+              <h4></h4>
+              <img src="" alt="instagram" />
+              <h4></h4>
+              <img src="" alt="linkedin" />
+              <h4></h4>
+            </address>
+          </div>
         </div>
-
-        <header>
-          <nav>
-            <div class="tabs"></div>
-          </nav>
-        </header>
-
-        <address class="socials">
-          <img src="" alt="hyperlink icon for twitter" />
-          <h4></h4>
-          <img src="" alt="hyperlink icon for github" />
-          <h4></h4>
-          <img src="" alt="hyperlink icon for instagram" />
-          <h4></h4>
-          <img src="" alt="hyperlink icon for linkedin" />
-          <h4></h4>
-        </address>
       </main>
 
       <!-- Desktop Version ----------------------------------------------------------------->
       <main class="landing-page-desktop">
-
-        <!-- Sidebar Nav -->
+        <!-- Sidebar Nav ------------------------------------------>
         <header class="wrap-bar">
           <section class="sidebar">
             <section class="profile-pic">
@@ -67,41 +84,51 @@
 
             <section>
               <address class="socials">
-                <img src="" alt="hyperlink icon for twitter" /> <h4></h4>
-                <img src="" alt="hyperlink icon for github" /> <h4></h4>
-                <img src="" alt="hyperlink icon for instagram" /> <h4></h4>
-                <img src="" alt="hyperlink icon for linkedin" /> <h4></h4>
+                <img src="" alt="hyperlink icon for twitter" />
+                <h4></h4>
+                <img src="" alt="hyperlink icon for github" />
+                <h4></h4>
+                <img src="" alt="hyperlink icon for instagram" />
+                <h4></h4>
+                <img src="" alt="hyperlink icon for linkedin" />
+                <h4></h4>
               </address>
             </section>
           </section>
         </header>
-      </main>
 
-      <!-- Resume Page -->
-     <main class="resume-page">
-        <a href="Elias-Haynes-SWE-Resume.pdf"></a>
-      </main> 
-
-      <main class="about-page">
-        <h1>About Elias</h1>
-        <div class="containers">
-          <div class="about-leftside-container">
-            <h2>Who is Elias? </h2>
-            <ul>
-              <li>My name is Elias Haynes, I am a 21 year old living in Austin Texas. I am experienced in the process of Fullstack Application Development. 
-                Wether its creating neat and directive interfaces or intricate server-side logic I contain a deep understanding of the latest frontend frameworks, backend technologies, and database softwares. 
-                This allows me to bring innovation to every project as well as encompass a diverse range of projects which highlight that ability.</li>
-            </ul>
+        <!-- About Page ------------------------------------------>
+        <main class="about-page">
+          <h1>About Elias</h1>
+          <div class="containers">
+            <div class="about-leftside-container">
+              <h2>Who is Elias?</h2>
+              <ul>
+                <li>
+                  My name is Elias Haynes, I am a 21 year old living in Austin
+                  Texas. I am experienced in the process of Fullstack
+                  Application Development. Wether its creating neat and
+                  directive interfaces or intricate server-side logic I contain
+                  a deep understanding of the latest frontend frameworks,
+                  backend technologies, and database softwares. This allows me
+                  to bring innovation to every project as well as encompass a
+                  diverse range of projects which highlight that ability.
+                </li>
+              </ul>
+            </div>
+            <div class="about-rightside-container">
+              <div class="about-img"><img src="" alt="" /></div>
+              <h2>Pleased to meet you!</h2>
+            </div>
           </div>
-          <div class="about-rightside-container">
-            <div class="about-img"><img src="" alt="" /></div>
-            <h2>Pleased to meet you!</h2>
-          </div>
-        </div>
-      </main>
+        </main>
 
-      <main class="portfolio-page">
-        <section class="portfolio-rightside-container">
+        <!-- Resume Page ------------------------------------------>
+        <main class="resume-page">
+          <a href="Elias-Haynes-SWE-Resume.pdf"></a>
+        </main>
+
+        <main class="portfolio-page">
           <section class="portfolio-header">
             <h2>Discover my skills!</h2>
             <button class="portfolio-header-explore">Find out More</button>
@@ -130,9 +157,8 @@
               <figure></figure>
             </section>
           </section>
-        </section>
+        </main>
       </main>
-
     </div>
   </body>
 </html>
