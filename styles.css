@@ -110,12 +110,17 @@
     height: 50%;
     border: 1px solid orange;
     margin-top: 0px;
-    
   }
   
   .about-page h2 {
     display: flex;
     justify-content: center;
+  }
+
+  .about-page li {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
   }
   .about-page .about-rightside-container {
     width: 50%;
