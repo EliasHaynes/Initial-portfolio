@@ -1,4 +1,3 @@
-
 /* Mobile version */
 @media (max-width: 768px) {
   
@@ -15,7 +14,7 @@
     height: auto;
     width: 100%;
     background-color: grey;
-    color: orange;
+    color: black;
   }
   
   .main-container {
@@ -50,23 +49,25 @@
     background-image: url('atx-portfolio-background-photo.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
-    border-bottom: 1px solid red;
     border-radius: 0px 0px 40% 40%;
   }
 
   .location {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 5%;
+    height: 5%;
   }
 
   .landing-page-bottom-container {
     height: 50%;
-    border: 1px solid red;
+
   }
 
   .basic-info {
     display: flex;
+    height: auto;
     justify-content: space-evenly
   }
 
@@ -78,21 +79,30 @@
     
   }
 
-   .socials {
+  .tabs {
+    height: 20%;
     display: flex;
     justify-content: space-around;
-   }
-
-   .tabs {
-    display: flex;
-    justify-content: space-around;
+    align-items: center;
     margin-right: 5%;
-   }
+  } 
+   
+   .socials {
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+
+  }
+
+
+
 
    /***************** M About Page  ********************/
    .about-page {
     height: 100vh;
     width: 100%;
+    border: 1px solid orange;
 
   }
   
