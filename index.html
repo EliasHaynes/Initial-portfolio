@@ -14,6 +14,9 @@
     <div class="main-container">
 
       <!-- Mobile Version ------------------------------------------------------------------>
+      <div class="mobile-view">
+
+
       <main class="landing-page-mobile">
         <!-- M Landing Page ------------------------------------------>
         <div class="landing-page" >
@@ -86,11 +89,12 @@
         </div>
       </main>
 
-      <!-- Resume Page ------------------------------------------>
+      <!-- M Resume Page ------------------------------------------>
       <main class="resume-page">
         <h1>My Resume</h1>
-        <iframe src="Elias-Haynes-SWE-Resume.pdf" ></iframe>
-        <a href="Elias-Haynes-SWE-Resume.pdf"></a>
+        <object data="Elias-Haynes-SWE-Resume.pdf" type="application/pdf">
+          <p>Your web browser doesnt have a PDF plugin. Instead you can <a href=""></a></p>
+        </object>
       </main>
 
       <!-- M Portfolio Page ------------------------------------------>
@@ -124,9 +128,10 @@
           </section>
         </section>
       </main>
+    </div>
 
 <!------ Desktop Version ----------------------------------------------------------------->
-      <main class="landing-page-desktop">
+      <main class="desktop-view">
         <!-- Sidebar Nav ------------------------------------------>
         <header class="wrap-bar">
           <section class="sidebar">
@@ -192,7 +197,7 @@
 
         <!-- Resume Page ------------------------------------------>
         <main class="resume-page">
-          <a href="Elias-Haynes-SWE-Resume.pdf"></a>
+          <iframe src="Elias-Haynes-SWE-Resume.pdf" ></iframe>
         </main>
 
         <!-- Portfolio Page ------------------------------------------>
