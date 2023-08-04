@@ -161,7 +161,7 @@
     border: 2px solid red;
   }
 
-  .resume-page object {
+  .resume-page .embed-pdf {
     width:100%;
     height: 90%;
   }
