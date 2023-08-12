@@ -80,7 +80,7 @@ function onNextPage() {
 document.getElementById('next').addEventListener('click', onNextPage)
 
 
-pdfjsLib.getDocument("https://github.com/EliasHaynes/portfolio/blob/86484ecf0ed2b92deb67e379be981a3c397ca045/Elias-Haynes-SWE-Resume.pdf").promise.then((doc) => {
+pdfjsLib.getDocument("/portfolio/Elias-Haynes-SWE-Resume.pdf").promise.then((doc) => {
     pdfDoc = doc
     document.getElementById('page_count').textContent = doc.numPages;
     renderPage(pageNum)
