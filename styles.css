@@ -161,6 +161,14 @@
     border: 2px solid red;
   }
 
+  .pdfContainer {
+    height: 60%;
+    width: 100%;
+  }
+
+  #pdfCanvas {
+    width: 100%;
+  }
 
   /***************** M Portfolio Page  ********************/
   .portfolio-page {
@@ -259,16 +267,13 @@
     position: absolute;
     top: 0;
     left: 0;
-
   }
-  
+
   .sidebar {
-    width: 10%;
+    width:10%;
     height:100%;
     position: fixed;
     top: 0;
-    
-
   }
 
   .profile-pic {
@@ -279,7 +284,6 @@
   .extra-info {
     border: 1px solid orange;
     height: 25%;
-
   }
 
   .tabs {
@@ -295,22 +299,17 @@
     height: 20%;
     border: 1px solid orange;
   }
-  
 
-  
-  
-  
-  
   /***************** Resume Page  ********************/
   .resume-page {
     height: 100vh;
     width: 90%;
     border: 2px solid red;
-    margin-left: 13%;
+    margin-left: 10%;
   }
 
   .resume-page iframe {
-    width:100%;
+    width:98%;
     height: 90%;
   }
   
@@ -385,7 +384,7 @@
     height: 100vh;
     width: 90%;
     border: 2px solid orange;
-    margin-left: 13%;
+    margin-left: 10%;
   }
   
   .about-page h1 {
@@ -426,12 +425,12 @@
   /***************** Portfolio Page  ********************/
   .portfolio-page {
     width: 90%;
-    height: 100vh;
+    height: 110vh;
     border: 2px solid orange;
     display: flex;
     flex-flow: column nowrap;
     align-content: flex-start;
-    margin-left: 13%;
+    margin-left: 10%;
     
   }
   
@@ -439,7 +438,7 @@
 
   
   .portfolio-header {
-      width: 75em;
+      width: 100%;
       height: 30%;
       border: 1px solid orange;
   }

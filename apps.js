@@ -80,10 +80,18 @@ function onNextPage() {
 document.getElementById('next').addEventListener('click', onNextPage)
 
 
-pdfjsLib.getDocument("/portfolio/Elias-Haynes-SWE-Resume.pdf").promise.then((doc) => {
-    pdfDoc = doc
-    document.getElementById('page_count').textContent = doc.numPages;
-    renderPage(pageNum)
+// pdfjsLib.getDocument("/portfolio/Elias-Haynes-SWE-Resume.pdf").promise.then((doc) => {
+//     pdfDoc = doc
+//     document.getElementById('page_count').textContent = doc.numPages;
+//     renderPage(pageNum)
+// })
+
+
+
+pdfjsLib.getDocument("Elias-Haynes-SWE-Resume.pdf").promise.then((doc) => {
+  pdfDoc = doc
+  document.getElementById('page_count').textContent = doc.numPages;
+  renderPage(pageNum)
 })
 
   

@@ -42,10 +42,10 @@
             <header>
               <nav>
                 <div class="tabs">
-                  <div>About</div>
-                  <div>Resume</div>
-                  <div>My Work</div>
-                  <div>Contact Me!</div>
+                  <a href="#mobile-about-page">About</a>
+                  <a href="#mobile-resume-page">Resume</a>
+                  <a href="#mobile-portfolio-page">My Work</a>
+                  <a href="">Contact Me!</a>
                 </div>
               </nav>
             </header>
@@ -66,7 +66,7 @@
         </div>
       </main>
       <!-- M About Page ------------------------------------------>
-      <main class="about-page">
+      <main id="mobile-about-page" class="about-page">
         <h1>About Elias</h1>
         <div class="containers">
           <div class="about-leftside-container">
@@ -92,7 +92,7 @@
       </main>
 
       <!-- M Resume Page ------------------------------------------>
-      <main class="resume-page">
+      <main id="mobile-resume-page" class="resume-page">
         <h1>My Resume</h1>
         <div class="pdfContainer">
           <button id="prev">Previous</button>
@@ -105,7 +105,7 @@
       </main>
 
       <!-- M Portfolio Page ------------------------------------------>
-      <main class="portfolio-page">
+      <main id="mobile-portfolio-page" class="portfolio-page">
         <section class="portfolio-header">
           <h2>Discover my skills!</h2>
           <button class="portfolio-header-explore">Find out More</button>
@@ -139,11 +139,12 @@
 
 <!------ Desktop Version ----------------------------------------------------------------->
       <main class="desktop-view">
+
         <!-- Sidebar Nav ------------------------------------------>
-        <header class="wrap-bar">
-          <section class="sidebar">
-            <section class="profile-pic">
-              <img src="" alt="" />
+          <header class="wrap-bar">
+            <section class="sidebar">
+              <section class="profile-pic">
+                <img src="" alt="" />
               <h4>Elias Haynes</h4>
               <h5>Fullstack Javascript Application Developer</h5>
             </section>
@@ -153,10 +154,9 @@
               <p>Age: 21</p>
             </section>
             <nav class="tabs">
-              <div>Home</div>
-              <div>About</div>
-              <div>Resume</div>
-              <div>Gallery</div>
+              <a href="#about-page">About</a>
+              <a href="#resume-page">Resume</a>
+              <a href="#portfolio-page">Gallery</a>
               <!-- Contact Page Pop Up Button-->
               <button id="open" class="open">Contact Me!</button>
             </nav>
@@ -177,8 +177,10 @@
         </header>
 
         <!-- About Page ------------------------------------------>
-        <main class="about-page">
-          <h1>About Elias</h1>
+        <div class="desktop-view-rightside-container">
+
+          <main id="about-page" class="about-page">
+            <h1>About Elias</h1>
           <div class="containers">
             <div class="about-leftside-container">
               <h2>Who is Elias?</h2>
@@ -203,21 +205,15 @@
         </main>
 
         <!-- Resume Page ------------------------------------------>
-        <main class="resume-page">
+        <main id="resume-page" class="resume-page">
           <iframe src="Elias-Haynes-SWE-Resume.pdf" ></iframe>
         </main>
 
         <!-- Portfolio Page ------------------------------------------>
-        <main class="portfolio-page">
+        <main id="portfolio-page" class="portfolio-page">
           <section class="portfolio-header">
             <h2>Discover my skills!</h2>
             <button class="portfolio-header-explore">Find out More</button>
-          </section>
-          <section class="portfolio-accolades">
-            <span>1yr Experience</span>
-            <span>143 completed projects</span>
-            <span>114 happy customers</span>
-            <span>20+ honors and awards </span>
           </section>
           <h3>My Work:</h3>
           <section class="gallery">
@@ -238,6 +234,7 @@
             </section>
           </section>
         </main>
+      </div>
       </main>
     </div>
   </body>
