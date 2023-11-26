@@ -232,8 +232,8 @@
   }
 
   figure {
-    width: 20em;
-    height: 20em;
+    width: 25%;
+    height: 5%;
     border: 1px solid black;
   }
 
@@ -243,7 +243,6 @@
   }
 
   .first-row {
-    height: 31%;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -255,7 +254,6 @@
   }
 
   .second-row {
-    height: 31%;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -267,7 +265,6 @@
   }
 
   .third-row {
-    height:31%;
     width:100%;
     display: flex;
     flex-flow: row wrap;
