@@ -215,7 +215,7 @@
 
   /***************** M Portfolio Page  ********************/
   .portfolio-page {
-    width: 90%;
+    width: 100%;
     max-width: 1350px;
     height: auto;
     border-bottom: 5px solid white;
@@ -232,8 +232,8 @@
   }
 
   figure {
-    width: 5em;
-    height: 5em;
+    width: 25%;
+    height: 25%;
     border: 2px solid black;
   }
 
@@ -243,33 +243,36 @@
   }
 
   .first-row {
+    width: 100vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
 
-  .first-row h3 {
-    width:35%;
+  .first-row h4 {
+    width:40%;
   }
 
   .second-row {
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
 
-  .second-row h3 {
-    width: 35%;
+  .second-row h4 {
+    width: 40%;
   }
 
   .third-row {
+    width:100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
   }
 
-  .third-row h3 {
-    width:35%;
+  .third-row h4 {
+    width:40%;
   }
 }
 /* ------------------------------------------------------------------------------- */
