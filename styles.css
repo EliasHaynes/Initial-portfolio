@@ -232,9 +232,9 @@
   }
 
   figure {
-    width: 10em;
-    height: 10em;
-    border: 2px solid black;
+    width: 10%;
+    height: 10%;
+    border: 1px solid black;
   }
 
   .portfolio-page img {
