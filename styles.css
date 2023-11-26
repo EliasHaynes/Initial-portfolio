@@ -217,7 +217,7 @@
   .portfolio-page {
     width: 100%;
     max-width: 1350px;
-    height: 100vh;
+    height: 100%;
     border-bottom: 5px solid white;
     display: flex;
     flex-flow: column nowrap;
@@ -232,8 +232,8 @@
   }
 
   figure {
-    width: 20em;
-    height: 20em;
+    width: 10em;
+    height: 10em;
     border: 1px solid black;
   }
 
