@@ -216,7 +216,7 @@
   /***************** M Portfolio Page  ********************/
   .portfolio-page {
     width: 100%;
-    max-width: 1350px;
+    
     height: 100%;
     border-bottom: 5px solid white;
     display: flex;
@@ -232,8 +232,8 @@
   }
 
   figure {
-    width: 10em;
-    height: 10em;
+    width: 35%;
+    height: 70%;
     border: 1px solid black;
   }
 
