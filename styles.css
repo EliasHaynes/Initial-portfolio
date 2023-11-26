@@ -243,6 +243,7 @@
   }
 
   .first-row {
+    height: 31%;
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -254,6 +255,7 @@
   }
 
   .second-row {
+    height: 31%;
     width: 100%;
     display: flex;
     flex-flow: row wrap;
@@ -265,6 +267,7 @@
   }
 
   .third-row {
+    height:31%;
     width:100%;
     display: flex;
     flex-flow: row wrap;
