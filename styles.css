@@ -122,6 +122,7 @@
     -webkit-animation: bounce 0.75s infinite;
   }
 
+  
   .socials {
     margin-top: 8%;
     height: 15%;
@@ -195,77 +196,81 @@
   .resume-page {
     height: 100vh;
     width: 100%;
-    border: 2px solid red;
+    border-bottom: 5px solid white;
+  }
+
+  .resume-page h1 {
+    height:2%;
   }
 
   .pdfContainer {
-    height: 90%;
+    height: auto;
     width: 100%;
   }
 
   #pdfCanvas {
     width: 100%;
+    height: 95%;
   }
 
   /***************** M Portfolio Page  ********************/
   .portfolio-page {
-    width: 100%;
-    height: 100vh;
-    border: 2px solid orange;
+    width: 90%;
+    max-width: 1350px;
+    height: auto;
+    border-bottom: 5px solid white;
     display: flex;
     flex-flow: column nowrap;
     align-content: flex-start;
+  
   }
 
-  .portfolio-header {
-    width: 100%;
-    height: 30%;
-  }
 
-  .portfolio-accolades {
+  .portfolio-page h2 {
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid orange;
-  }
-
-  .gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    width: 95%;
-    height: 100%;
+    justify-content: center;
   }
 
   figure {
-    width: 50%;
-    height: 50%;
-    border: 1px solid orange;
+    width: 15em;
+    height: 15em;
+    border: 2px solid black;
+  }
+
+  .portfolio-page img {
+    height: 100%;
+    width: 100%;
   }
 
   .first-row {
     display: flex;
-    width: 33%;
-    height: 33%;
-    display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
+  .first-row h3 {
+    width:35%;
   }
 
   .second-row {
-    width: 33%;
-    height: 33%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
+  .second-row h3 {
+    width: 35%;
   }
 
   .third-row {
-    width: 33%;
-    height: 33%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
-}
+
+  .third-row h3 {
+    width:35%;
+  }
 
 /* ------------------------------------------------------------------------------- */
 
