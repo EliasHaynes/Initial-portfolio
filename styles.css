@@ -1,6 +1,6 @@
 /* Mobile version */
+
 @media (max-width: 768px) {
-  
   .desktop-view {
     display: none;
   }
@@ -13,28 +13,26 @@
     margin: 0px;
     height: auto;
     width: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
   }
 
   @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-  
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   .main-container {
     max-width: 1400px;
     height: auto;
     width: 100%;
     position: relative;
+    background-color: rgb(187, 81, 5);
     overflow: hidden;
   }
 
@@ -49,7 +47,6 @@
   .landing-page {
     width: 100%;
     height: 100vh;
-
   }
 
   .landing-page-top-container {
@@ -58,7 +55,7 @@
     align-items: center;
     align-content: space-evenly;
     height: 50%;
-    background-image: url('atx-portfolio-background-photo.jpg');
+    background-image: url("atx-portfolio-background-photo.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 0px 0px 40% 40%;
@@ -79,7 +76,7 @@
   .basic-info {
     display: flex;
     height: auto;
-    justify-content: space-evenly
+    justify-content: space-evenly;
   }
 
   .profile-pic {
@@ -87,7 +84,6 @@
     width: auto;
     border-radius: 50%;
     border: 1px solid red;
-    
   }
 
   .tabs {
@@ -96,30 +92,62 @@
     justify-content: space-around;
     align-items: center;
     margin-right: 5%;
-  } 
-   
-   .socials {
-    height: 60%;
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    30% {
+      transform: scale(1, 0.8) translate(0px, 10px);
+    }
+
+    75% {
+      transform: scale(1, 1.1) translate(0px, -25px);
+    }
+
+    100% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+  }
+
+  .bounce {
+    text-align: center;
+    margin: 0 auto;
+    height: 2%;
+    width: 50%;
+    padding: 5%;
+    background: red;
+    -webkit-animation: bounce 0.75s infinite;
+  }
+
+  .socials {
+    margin-top: 8%;
+    height: 15%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
   }
 
-   /***************** M About Page  ********************/
-   .about-page {
+  .socials img {
+    height:100%
+  }
+
+  /***************** M About Page  ********************/
+  .about-page {
     height: 100vh;
     width: 100%;
     border: 1px solid orange;
-
   }
-  
+
   .about-page h1 {
     height: auto;
     display: flex;
     justify-content: center;
     margin-top: 2px;
   }
-  
+
   .containers {
     display: flex;
     width: 100%;
@@ -127,14 +155,14 @@
     flex-direction: column;
     align-items: center;
   }
-  
+
   .about-page .about-leftside-container {
     width: 95%;
     height: auto;
     border: 1px solid orange;
     margin-top: 0px;
   }
-  
+
   .about-page h2 {
     display: flex;
     justify-content: center;
@@ -152,17 +180,16 @@
     margin-top: 10%;
     border: 1px solid orange;
   }
-  
+
   .about-img {
     width: 90%;
     height: 80%;
     border: 1px solid red;
   }
-  
+
   .greeting-tag {
     height: 10%;
   }
-
 
   /***************** M Resume Page  ********************/
   .resume-page {
@@ -189,18 +216,18 @@
     flex-flow: column nowrap;
     align-content: flex-start;
   }
-  
+
   .portfolio-header {
     width: 100%;
     height: 30%;
   }
-  
+
   .portfolio-accolades {
     display: flex;
     justify-content: space-around;
     border-bottom: 1px solid orange;
   }
-  
+
   .gallery {
     display: flex;
     flex-flow: row nowrap;
@@ -213,7 +240,7 @@
     height: 50%;
     border: 1px solid orange;
   }
-  
+
   .first-row {
     display: flex;
     width: 33%;
@@ -222,7 +249,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
-  
+
   .second-row {
     width: 33%;
     height: 33%;
@@ -230,21 +257,20 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
   }
-  
+
   .third-row {
     width: 33%;
     height: 33%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-  } 
+  }
 }
 
 /* ------------------------------------------------------------------------------- */
 
 /* Desktop version */
 @media (min-width: 769px) {
-
   .mobile-view {
     display: none;
   }
@@ -256,33 +282,19 @@
     margin: 0px;
     height: auto;
     width: 100%;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    background: black;
+    opacity: 1;
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
   .main-container {
     max-width: 1500px;
     height: auto;
     width: 100%;
     position: relative;
+    background-color: rgb(187, 81, 5);
+    border: 5px solid white;
   }
 
-
-
-  
   /***************** Header/Nav  ********************/
   .wrap-bar {
     position: absolute;
@@ -291,27 +303,58 @@
   }
 
   .sidebar {
-    width:10%;
+    width: 10%;
     max-width: 150px;
-    height:100%;
+    height: 99%;
     position: fixed;
     top: 0;
-    margin-right: 10%;
-    background-color: rgba(46,139,87,.4);
+    border-right: 5px solid white;
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    background-color: rgb(187, 81, 5);
   }
 
   .profile-pic {
     height: 20%;
-    border: 1px solid orange;
+    border-bottom: 3px solid white;
   }
 
   .extra-info {
     height: 25%;
+    border-bottom: 3px solid white;
   }
+
+  @-webkit-keyframes bounce {
+    0% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+
+    30% {
+      transform: scale(1, 0.8) translate(0px, 10px);
+    }
+
+    75% {
+      transform: scale(1, 1.1) translate(0px, -25px);
+    }
+
+    100% {
+      transform: scale(1, 1) translate(0px, 0px);
+    }
+  }
+
+  .bounce {
+    height: 10%;
+    width: 60%;
+    padding: 10%;
+    background: red;
+    -webkit-animation: bounce 0.75s infinite;
+  }
+
+
 
   .tabs {
     height: 35%;
-    border-top: 1px solid darkcyan;
+    border-bottom: 3px solid white;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
@@ -319,215 +362,172 @@
   }
 
   .socials {
-    height: 20%;
-    border: 1px solid orange;
-  }
-
-  /***************** Resume Page  ********************/
-  .resume-page {
-    height: 100vh;
-    width: 90%;
-    border: 2px solid red;
-    margin-left: 10%;
-    max-width: 1350px;
-  }
-
-  .resume-page iframe {
-    width:98%;
-    height: 90%;
-  }
-  
-  .resume-wrap-header-display {
     display: flex;
-    justify-content: center;
-  }
-  
-  .resume-header-display {
-    width: 750px;
-    height: 100px;
-    border: 1px solid yellow;
-    margin-top: 50px;
-  }
-  
-  .circle-container {
-    width: 200px;
-    height:200px;
-    border: 1px solid green;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .resume-textarea {
-    display: flex;
-    margin-top: 100px;
     justify-content: space-evenly;
+    height: 20%;
+    border-bottom: 3px solid white;
   }
-  
-  .resume-leftside-container {
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    margin-left: 100px;
+
+  .socials a {
+    width:25%;
+    height:25%;
   }
-  
-  .resume-experience {
-    width: 400px;
-    height: 200px;
-    margin-bottom: 100px;
+
+
+  .socials img{
+    width: 100%;
+    height:100%;
   }
-  
-  .resume-experience h2 {
-    margin: 0px;
-  }
-  
-  .resume-education {
-    width: 30%;
-    height: 30%;
-  }
-  
-  .resume-education h2 {
-    margin: 0px;
-  }
-  
-  .wrapped-direct-gallery-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
-  }
-  
-  button .direct-gallery-container {
-    width: 200px;
-    height: 200px;
-    border: 1px solid red;
-  }
-  
+
   /***************** About Page  ********************/
   .about-page {
     height: 100vh;
     width: 90%;
     max-width: 1350px;
-    border: 2px solid orange;
+    border-bottom: 5px solid white;
     margin-left: 10%;
   }
-  
+
   .about-page h1 {
     display: flex;
     justify-content: center;
   }
-  
+
   .containers {
     display: flex;
     justify-content: center;
     align-items: space-around;
   }
-  
+
   .about-page .about-leftside-container {
     width: 50%;
     height: 50%;
-    border: 1px solid orange;
+    border: 3px solid purple;
     margin-right: 50px;
+    margin-left: 10px;
   }
-  
+
   .about-page .about-rightside-container {
     width: 50%;
     height: 50%;
     margin-top: 75px;
   }
-  
+
   .about-page div.about-img {
     width: 50%;
     height: 50%;
-    border: 1px solid orange;
+    border: 3px solid purple;
   }
-  
+
   .containers h2 {
     display: flex;
     justify-content: center;
   }
-  
+
+  /***************** Resume Page  ********************/
+  .resume-page {
+    height: 100vh;
+    width: 100%;
+    border-bottom: 5px solid white;
+    margin-left: 10%;
+    max-width: 1350px;
+  }
+
+  .resume-page h1 {
+    display: flex;
+    justify-content: center;
+    height: 5%;
+  }
+
+  .resume-page iframe {
+    width: 100%;
+    height: 95%;
+  }
+
   /***************** Portfolio Page  ********************/
   .portfolio-page {
     width: 90%;
     max-width: 1350px;
-    height: 110vh;
-    border: 2px solid orange;
+    height: auto;
+    border-bottom: 5px solid white;
     display: flex;
     flex-flow: column nowrap;
     align-content: flex-start;
     margin-left: 10%;
   }
-  
+
   /**** Portfolio Page Rightside  ****/
 
-  
-  .portfolio-header {
-      width: 100%;
-      height: 30%;
-      border: 1px solid orange;
-  }
-  
-  .portfolio-accolades {
+  .portfolio-page h2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
-  
+
   figure {
-    width: 10em;
-    height: 10em;
-    border: 1px solid orange;
+    width: 20em;
+    height: 20em;
+    border: 2px solid black;
   }
-  
+
+  .portfolio-page img {
+    height: 100%;
+    width: 100%;
+  }
+
   .first-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-  
+    justify-content: flex-start;
   }
-  
+
+  .first-row h3 {
+    width: 20%;
+  }
+
   .second-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-  
+    justify-content: flex-start;
   }
-  
+
+  .second-row h3 {
+    width: 20%;
+  }
+
   .third-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
-  } 
-  
-  
+    justify-content: flex-start;
+  }
+
+  .third-row h3 {
+    width:20%;
+  }
+
   /***************** Contact Page Modal Pop up ********************/
   #contact-modal {
-  
   }
-  
+
   #contact-modal .close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
   }
-  
+
   .modal-container {
     display: none;
     background-color: rgba(0, 0, 0, 0.3);
-  
   }
-  
+
   .modal-container.show {
     display: block;
     position: fixed;
     margin-top: 500px;
   }
-  
-  
+
   .contact-modal {
     width: 600px;
     max-width: 100%;
     background-color: white;
   }
-
 }

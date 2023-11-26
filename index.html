@@ -7,180 +7,60 @@
       content="width=device-width, initial-scale=1.0 shrink-to-fit=no"
     />
     <title>Home</title>
-    <base href="">
+    <base href="" />
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
     <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
     <div class="main-container">
-
       <!-- Mobile Version ------------------------------------------------------------------>
       <div class="mobile-view">
-
-
-      <main class="landing-page-mobile">
-        <!-- M Landing Page ------------------------------------------>
-        <div class="landing-page" >
-          <div class="landing-page-top-container">
-            <div class="profile-pic">
-              <img src="" alt="profile pic of me" />
-            </div>
-            <h1>Elias Haynes</h1>
-            <h3>Fullstack Application Developer</h3>
-            <div class="location">
-              <img src="location-pin.png" alt="icon of pinpoint location" />
-              <h5>Austin,Tx</h5>
-            </div>
-          </div>
-
-          <div class="landing-page-bottom-container">
-            <div class="basic-info">
-              <p>Age: 21</p>
-              <p>Language: English</p>
-            </div>
-            <header>
-              <nav>
-                <div class="tabs">
-                  <a href="#mobile-about-page">About</a>
-                  <a href="#mobile-resume-page">Resume</a>
-                  <a href="#mobile-portfolio-page">My Work</a>
-                  <a href="">Contact Me!</a>
-                </div>
-              </nav>
-            </header>
-
-            <address>
-              <div class="socials">
-                <img src="" alt="twitter" />
-                <h4></h4>
-                <img src="" alt="github" />
-                <h4></h4>
-                <img src="" alt="instagram" />
-                <h4></h4>
-                <img src="" alt="linkedin" />
-                <h4></h4>
+        <main class="landing-page-mobile">
+          <!-- M Landing Page ------------------------------------------>
+          <div class="landing-page">
+            <div class="landing-page-top-container">
+              <div class="profile-pic">
+                <img src="" alt="profile pic of me" />
               </div>
-            </address>
-          </div>
-        </div>
-      </main>
-      <!-- M About Page ------------------------------------------>
-      <main id="mobile-about-page" class="about-page">
-        <h1>About Elias</h1>
-        <div class="containers">
-          <div class="about-leftside-container">
-            <h2>Who is Elias?</h2>
-            <ul>
-              <li>
-                My name is Elias Haynes, I am a 21 year old living in Austin
-                Texas. I am experienced in the process of Fullstack
-                Application Development. Wether its creating neat and
-                directive interfaces or intricate server-side logic I contain
-                a deep understanding of the latest frontend frameworks,
-                backend technologies, and database softwares. This allows me
-                to bring innovation to every project as well as encompass a
-                diverse range of projects which highlight that ability.
-              </li>
-            </ul>
-          </div>
-          <div class="about-rightside-container">
-            <img class="about-img" src="" alt="">
-            <h2 class="greeting-tag">Pleased to meet you!</h2>
-          </div>
-        </div>
-      </main>
+              <h1>Elias Haynes</h1>
+              <h3>Fullstack Application Developer</h3>
+              <div class="location">
+                <img src="location-pin.png" alt="icon of pinpoint location" />
+                <h5>Austin,Tx</h5>
+              </div>
+            </div>
 
-      <!-- M Resume Page ------------------------------------------>
-      <main id="mobile-resume-page" class="resume-page">
-        <h1>My Resume</h1>
-        <div class="pdfContainer">
-          <button id="prev">Previous</button>
-          <button id="next">Next</button>
-          <button id="zoomIn">++</button>
-          <button id="zoomOut">--</button>
-            <span>Page: <span id="page_num"></span> / <span id="page_count"></span></span>
-          <canvas id="pdfCanvas"></canvas>
-        </div>
-      </main>
+            <div class="landing-page-bottom-container">
+              <div class="basic-info">
+                <p>Age: 21</p>
+                <p>Language: English</p>
+              </div>
+              <header>
+                <nav>
+                  <div class="tabs">
+                    <a href="#mobile-about-page">About</a>
+                    <a href="#mobile-resume-page">Resume</a>
+                    <a href="#mobile-portfolio-page">My Work</a>
+                  </div>
+                </nav>
+                <div id="open" class="bounce open"> Contact Me!</div>
 
-      <!-- M Portfolio Page ------------------------------------------>
-      <main id="mobile-portfolio-page" class="portfolio-page">
-        <section class="portfolio-header">
-          <h2>Discover my skills!</h2>
-          <button class="portfolio-header-explore">Find out More</button>
-        </section>
-        <section class="portfolio-accolades">
-          <span>1yr Experience</span>
-          <span>143 completed projects</span>
-          <span>114 happy customers</span>
-          <span>20+ honors and awards </span>
-        </section>
-        <h3>My Work:</h3>
-        <section class="gallery">
-          <section class="first-row">
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-          </section>
-          <section class="second-row">
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-          </section>
-          <section class="third-row">
-            <figure></figure>
-            <figure></figure>
-            <figure></figure>
-          </section>
-        </section>
-      </main>
-    </div>
+              </header>
 
-<!------ Desktop Version ----------------------------------------------------------------->
-      <main class="desktop-view">
-
-        <!-- Sidebar Nav ------------------------------------------>
-          <header class="wrap-bar">
-            <section class="sidebar">
-              <section class="profile-pic">
-                <img src="" alt="" />
-              <h4>Elias Haynes</h4>
-              <h5>Fullstack Javascript Application Developer</h5>
-            </section>
-            <section class="extra-info">
-              <p>Residence: Austin Texas</p>
-              <p>Language: English</p>
-              <p>Age: 21</p>
-            </section>
-            <nav class="tabs">
-              <a href="#about-page">About</a>
-              <a href="#resume-page">Resume</a>
-              <a href="#portfolio-page">Gallery</a>
-              <!-- Contact Page Pop Up Button-->
-              <button id="open" class="open">Contact Me!</button>
-            </nav>
-
-            <section>
-              <address class="socials">
-                <img src="" alt="twitter" />
-                <h4></h4>
-                <img src="" alt="github" />
-                <h4></h4>
-                <img src="" alt="instagram" />
-                <h4></h4>
-                <img src="" alt="linkedin" />
-                <h4></h4>
+              <address>
+                <div class="socials">
+                  <img src="twitter-icon.png" alt="twitter" />
+                  <img src="github-icon.png" alt="github" />
+                  <img src="linkedin-icon.png" alt="linkedin" />
+                </div>
               </address>
-            </section>
-          </section>
-        </header>
-
-        <!-- About Page ------------------------------------------>
-        <div class="desktop-view-rightside-container">
-
-          <main id="about-page" class="about-page">
-            <h1>About Elias</h1>
+            </div>
+          </div>
+        </main>
+        <!-- M About Page ------------------------------------------>
+        <main id="mobile-about-page" class="about-page">
+          <h1>About Elias</h1>
           <div class="containers">
             <div class="about-leftside-container">
               <h2>Who is Elias?</h2>
@@ -198,22 +78,38 @@
               </ul>
             </div>
             <div class="about-rightside-container">
-              <div class="about-img"><img src="" alt="" /></div>
-              <h2>Pleased to meet you!</h2>
+              <img class="about-img" src="" alt="" />
+              <h2 class="greeting-tag">Pleased to meet you!</h2>
             </div>
           </div>
         </main>
 
-        <!-- Resume Page ------------------------------------------>
-        <main id="resume-page" class="resume-page">
-          <iframe src="Elias-Haynes-SWE-Resume.pdf" ></iframe>
+        <!-- M Resume Page ------------------------------------------>
+        <main id="mobile-resume-page" class="resume-page">
+          <h1>My Resume</h1>
+          <div class="pdfContainer">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+            <button id="zoomIn">++</button>
+            <button id="zoomOut">--</button>
+            <span
+              >Page: <span id="page_num"></span> / <span id="page_count"></span
+            ></span>
+            <canvas id="pdfCanvas"></canvas>
+          </div>
         </main>
 
-        <!-- Portfolio Page ------------------------------------------>
-        <main id="portfolio-page" class="portfolio-page">
+        <!-- M Portfolio Page ------------------------------------------>
+        <main id="mobile-portfolio-page" class="portfolio-page">
           <section class="portfolio-header">
             <h2>Discover my skills!</h2>
             <button class="portfolio-header-explore">Find out More</button>
+          </section>
+          <section class="portfolio-accolades">
+            <span>1yr Experience</span>
+            <span>143 completed projects</span>
+            <span>114 happy customers</span>
+            <span>20+ honors and awards </span>
           </section>
           <h3>My Work:</h3>
           <section class="gallery">
@@ -235,6 +131,107 @@
           </section>
         </main>
       </div>
+
+      <!------ Desktop Version ----------------------------------------------------------------->
+      <main class="desktop-view">
+        <!-- Sidebar Nav ------------------------------------------>
+        <header class="wrap-bar">
+          <section class="sidebar">
+            <section class="profile-pic">
+              <img src="" alt="" />
+              <h4>Elias Haynes</h4>
+              <h5>Fullstack Javascript Application Developer</h5>
+            </section>
+            <section class="extra-info">
+              <p>Residence: Austin Texas</p>
+              <p>Language: English</p>
+              <p>Age: 21</p>
+            </section>
+            <nav class="tabs">
+              <a href="#about-page">About</a>
+              <a href="#resume-page">Resume</a>
+              <a href="#portfolio-page">My Work</a>
+              <!-- Contact Page Pop Up Button-->
+              <div id="open" class="bounce open">Contact Me!</div>
+            </nav>
+
+            <section>
+              <h3>Follow me on these platforms:</h3>
+              <address class="socials">     
+                <a href=""> <img src="twitter-icon.png" alt="X formerly twitter icon hyperlink" />  </a>
+                <a href=""> <img src="github-icon.png" alt="github icon hyperlink" /> </a>
+                <a href=""> <img src="linkedin-icon.png" alt="linkedin icon hyperlink" /> </a>
+              </address>
+            </section>
+          </section>
+        </header>
+
+        <!-- About Page ------------------------------------------>
+        <div class="desktop-view-rightside-container">
+          <main id="about-page" class="about-page">
+            <h1>About Elias</h1>
+            <div class="containers">
+              <div class="about-leftside-container">
+                <h2>Who is Elias?</h2>
+                <ul>
+                  <li>
+                    My name is Elias Haynes, I am a 21 year old living in Austin
+                    Texas. I am experienced in the process of Fullstack
+                    Application Development. Wether its creating neat and
+                    directive interfaces or intricate server-side logic I
+                    contain a deep understanding of the latest frontend
+                    frameworks, backend technologies, and database softwares.
+                    This allows me to bring innovation to every project as well
+                    as encompass a diverse range of projects which highlight
+                    that ability.
+                  </li>
+                </ul>
+              </div>
+              <div class="about-rightside-container">
+                <div class="about-img"><img src="" alt="" /></div>
+                <h2>Pleased to meet you!</h2>
+              </div>
+            </div>
+          </main>
+
+          <!-- Resume Page ------------------------------------------>
+          <main id="resume-page" class="resume-page">
+            <h1>My Resume</h1>
+            <iframe src="Elias-Haynes-SWE-Resume.pdf"></iframe>
+          </main>
+
+          <!-- Portfolio Page ------------------------------------------>
+          <main id="portfolio-page" class="portfolio-page">
+            <h2>---- Some of My Latest Work ----</h2>
+            <section class="gallery">
+              <section class="first-row">
+                <figure id="capstone">
+                  <a href="https://github.com/EliasHaynes/capstone">
+                    <img src="Capstone-Icon-Ss.png" />
+                  </a>
+                </figure>
+                <h3>A one stop shop for all things vehicle repair related. Get information on your vehicle, Recieve data on relative scheduled maintenance for your vehicle, Perform C.R.U.D on repairs you perform on your vehicle with attached data metrics.</h3>
+              </section>
+              <section class="second-row">
+                <figure id="Job App Tracker">
+                  <a href="https://github.com/theMVPshop/jobAppTracker">
+                    <img src="Screenshot 2023-11-25 181637.png" />
+                  </a>
+                </figure>
+                <h3>This application was designed with user convenience in mind, this automated program powered with latest technology like AI and web scraping organizes submitted data, allowing users to spend more time applying for jobs than creating records of them.</h3>
+              </section>
+              <section class="third-row">
+                <figure id="ChatBot Tutor">
+                  <a href="https://github.com/theMVPshop/chatbottutor">
+                    <img src="artificial-intelligence-teacher-bot-concept-vector-23108334.jpg" />
+                  </a>
+                </figure>
+                <h3>An embed AI Tutor Chatbot for a web development bootcamp.</h3>
+              </section>
+              
+            </section>
+          </main>
+        </div>
       </main>
     </div>
   </body>
